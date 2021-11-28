@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'calculadora_nutricional.apps.CalculadoraNutricionalConfig'
+    'calculadora_nutricional.apps.CalculadoraNutricionalConfig',
+    'crispy_forms',
+    
 ]
 
 MIDDLEWARE = [
@@ -64,6 +66,9 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+        'libraries':{
+            'staticfiles': 'django.templatetags.static'
+        }
         },
     },
 ]

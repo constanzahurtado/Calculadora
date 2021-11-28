@@ -3,8 +3,10 @@
 
 <form method="POST">
 {% csrf_token %}
+<div class="form-group">
 {{form.as_p}}
-<button>Registrarme</button>
+</div>
+<button class="boton">Registrarme</button>
 
 </form>
 
